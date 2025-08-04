@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto", "Src\Modul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncidenciasImpostosReformaTributaria", "Src\Modulos\IncidenciasImpostosReformaTributaria\IncidenciasImpostosReformaTributaria.csproj", "{5CC4F89F-661A-423E-8811-97380EED156C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Src\Helpers\Helpers.csproj", "{195D276E-5913-4801-A77E-5D2629FB2AF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{5CC4F89F-661A-423E-8811-97380EED156C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CC4F89F-661A-423E-8811-97380EED156C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CC4F89F-661A-423E-8811-97380EED156C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195D276E-5913-4801-A77E-5D2629FB2AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195D276E-5913-4801-A77E-5D2629FB2AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195D276E-5913-4801-A77E-5D2629FB2AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195D276E-5913-4801-A77E-5D2629FB2AF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{E0F05ED2-F798-4237-B72A-F5944AAAD323} = {A55CAF77-7F90-4A83-AC49-F2FCFED56DDC}
 		{63BEC408-8F4A-4F79-B30C-92B359284F86} = {A55CAF77-7F90-4A83-AC49-F2FCFED56DDC}
 		{5CC4F89F-661A-423E-8811-97380EED156C} = {A55CAF77-7F90-4A83-AC49-F2FCFED56DDC}
+		{195D276E-5913-4801-A77E-5D2629FB2AF5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A330EECD-F948-4772-84A0-E3A42020044B}
