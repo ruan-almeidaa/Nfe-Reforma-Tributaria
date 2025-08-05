@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using NfeXml.Domain.Interfaces;
 using NfeXml.Dtos.Input;
 using NfeXml.Models;
@@ -21,9 +22,9 @@ namespace NfeXml.Controllers
         }
 
         [HttpPost("Atualizar-xml")]
-        public async Task<ActionResult<string>> AtualizarXml([FromBody] NfeXmlAtualizarXmlDto xmlAtualizarXmlDto)
+        public async Task<ActionResult<string>> AtualizarXml([FromForm] IFormFile xmlNfe)
         {
-            return await _nfeXmlUseCase.AtualizarXmlNfe(xmlAtualizarXmlDto.ConteudoXmlNfe);
+            return await _nfeXmlUseCase.AtualizarXmlNfe(xmlNfe);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using NfeXml.Domain.Interfaces;
+﻿using Microsoft.AspNetCore.Http;
+using NfeXml.Domain.Interfaces;
 using NfeXml.Models;
 using System;
 using System.Collections.Generic;
@@ -11,11 +12,15 @@ namespace NfeXml.Domain.Services
 {
     internal class Services : IServices
     {
-        public NfeProc DesserializarXmlNfe(string conteudoXml)
+
+        public async Task<NfeProc> DesserializarXmlNfe(IFormFile xmlNfe)
         {
+            using StreamReader reader = new StreamReader(xmlNfe.OpenReadStream());
+            var conteudoXml = await reader.ReadToEndAsync();
+
             XmlSerializer serializer = new XmlSerializer(typeof(NfeProc));
-            using var reader = new StringReader(conteudoXml);
-            return (NfeProc)serializer.Deserialize(reader);
+            using StringReader stringReader = new StringReader(conteudoXml);
+            return (NfeProc)serializer.Deserialize(stringReader);
         }
     }
 }

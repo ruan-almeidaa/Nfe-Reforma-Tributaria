@@ -1,4 +1,5 @@
-﻿using NfeXml.Models;
+﻿using Microsoft.AspNetCore.Http;
+using NfeXml.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace NfeXml.Domain.Interfaces
 {
     public interface IServices
     {
-        public NfeProc DesserializarXmlNfe(string conteudoXml);
+        public Task<NfeProc> DesserializarXmlNfe(IFormFile xmlNfe);
     }
 }
