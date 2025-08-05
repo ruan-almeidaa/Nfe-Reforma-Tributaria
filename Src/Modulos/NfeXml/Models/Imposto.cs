@@ -12,5 +12,8 @@ namespace NfeXml.Models
 
         [XmlElement("COFINS")]
         public COFINS COFINS { get; set; }
+
+        [XmlElement("IPI")]
+        public IPI IPI { get; set; }
     }
 }
