@@ -1,3 +1,5 @@
+using CalculoImposto.Controllers;
+using CalculoImposto.Infra;
 using Helpers;
 using Microsoft.AspNetCore.Mvc;
 using NfeXml.Controllers;
@@ -6,9 +8,11 @@ using NfeXml.Infra;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
-    .AddApplicationPart(typeof(NfeXmlController).Assembly);
+    .AddApplicationPart(typeof(NfeXmlController).Assembly)
+    .AddApplicationPart(typeof(CalculoImpostoController).Assembly);
 
 builder.Services.AddModuloNfeXml(builder.Configuration);
+builder.Services.AddModuloCalculoImposto(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
