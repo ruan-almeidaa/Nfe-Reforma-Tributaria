@@ -1,13 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NfeXml.Domain.Interfaces;
-using NfeXml.Dtos.Input;
-using NfeXml.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NfeXml.Controllers
 {
