@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Helpers\Helpers.csproj" />
-    <ProjectReference Include="..\Modulos\CalculoImposto\CalculoImposto.csproj" />
-    <ProjectReference Include="..\Modulos\NfeXml\NfeXml.csproj" />
+    <ProjectReference Include="..\Modules\CalculoImposto\CalculoImposto.csproj" />
+    <ProjectReference Include="..\Modules\NfeXml\NfeXml.csproj" />
   </ItemGroup>
 
 </Project>

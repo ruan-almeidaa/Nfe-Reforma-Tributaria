@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using NfeXml.Controllers;
 using NfeXml.Infra;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
