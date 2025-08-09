@@ -9,5 +9,9 @@ namespace CalculoImposto.Domain.Services
 {
     internal class Services : IServices
     {
+        public Task<bool> VerificaSeClassPertenceAoCst(string cst)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

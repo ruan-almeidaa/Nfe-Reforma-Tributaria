@@ -8,5 +8,6 @@ namespace CalculoImposto.Domain.Interfaces
 {
     internal interface IServices
     {
+        Task<bool> VerificaSeClassPertenceAoCst(string cst);
     }
 }
