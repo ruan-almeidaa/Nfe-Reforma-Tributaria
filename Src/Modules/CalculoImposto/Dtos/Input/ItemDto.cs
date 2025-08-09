@@ -11,6 +11,8 @@ namespace CalculoImposto.Dtos.Input
         public required int Numero { get; set; }
         public required string Ncm { get; set; }
         public required string Nbs { get; set; }
+        public required string Cst { get; set; }
+        public required string ClassTrib { get; set; }
         public required decimal Quantidade { get; set; }
         public required string UnidadeMedida { get; set; }
         public required string OrigemMerc { get; set; }
