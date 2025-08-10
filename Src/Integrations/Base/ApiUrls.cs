@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculoImposto.Integrations.CalculadoraConsumo.Services
+namespace Integrations.Base
 {
-    internal interface ICalculadoraHttpClient
+    public class ApiUrls
     {
+        public string CalculadoraConsumo { get; set; } = string.Empty;
     }
 }

@@ -1,16 +1,22 @@
 using CalculoImposto.Controllers;
 using CalculoImposto.Infra;
+using CalculoImposto.Integrations.CalculadoraConsumo.Services;
 using Helpers;
+using Integrations.Base;
 using Microsoft.AspNetCore.Mvc;
 using NfeXml.Controllers;
 using NfeXml.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Adiciona "Controllers" dos módulos
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(NfeXmlController).Assembly)
     .AddApplicationPart(typeof(CalculoImpostoController).Assembly);
 
+
+//Executa configurações de cada módulo
+builder.Services.ConfiguraIntegracoes(builder.Configuration);
 builder.Services.AddModuloNfeXml(builder.Configuration);
 builder.Services.AddModuloCalculoImposto(builder.Configuration);
 

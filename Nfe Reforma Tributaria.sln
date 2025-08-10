@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto", "Src\Modul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NfeXml", "Src\Modules\NfeXml\NfeXml.csproj", "{E42DBA65-D7B1-31D9-2E16-85BA821E8217}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integrations", "Src\Integrations\Integrations.csproj", "{AFC99A83-DB5C-4402-8123-D8D51DEA4155}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{E42DBA65-D7B1-31D9-2E16-85BA821E8217}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E42DBA65-D7B1-31D9-2E16-85BA821E8217}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E42DBA65-D7B1-31D9-2E16-85BA821E8217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC99A83-DB5C-4402-8123-D8D51DEA4155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC99A83-DB5C-4402-8123-D8D51DEA4155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC99A83-DB5C-4402-8123-D8D51DEA4155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC99A83-DB5C-4402-8123-D8D51DEA4155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{195D276E-5913-4801-A77E-5D2629FB2AF5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{60A9859C-4F85-2D6D-0F79-392A7CD64AD2} = {A55CAF77-7F90-4A83-AC49-F2FCFED56DDC}
 		{E42DBA65-D7B1-31D9-2E16-85BA821E8217} = {A55CAF77-7F90-4A83-AC49-F2FCFED56DDC}
+		{AFC99A83-DB5C-4402-8123-D8D51DEA4155} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A330EECD-F948-4772-84A0-E3A42020044B}
